@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Countdown</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="countdown/jquery.countdown.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="countdown/style.css" media="screen">
+
+    <script type="text/javascript">
+      $(function() {
+        var endDate = "May 27, 2014 00:00:00";
+
+        $('.countdown.rodrigo').countdown({ date: endDate });
+
+      });
+	  
+	   $(function() {
+        var endDate = "May 27, 2014 15:00:00";
+
+        $('.countdown.eduardo').countdown({ date: endDate });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DESAFIO DOS 21 DIAS</h1>
+
+      <h2>Countdown do Rodrigo</h2>
+      <div class="countdown rodrigo"></div>
+	  <br>
+	  <h2>Countdown do Hitek</h2>
+      <div class="countdown eduardo"></div>
+
+    
+    </div>
+  </body>
+</html>
